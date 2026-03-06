@@ -484,10 +484,13 @@ footer {
   
 
 /* Estilo para a seção dos diretores */
+/* Estilo para a seção dos diretores */
 .directors-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;   /* centraliza todos */
     align-items: center;
+    gap: 30px;                 /* espaço entre eles */
+    flex-wrap: nowrap;         /* impede quebrar linha */
     background-color: #f4f4f4;
     padding: 20px;
     margin-top: 50px;
@@ -542,6 +545,29 @@ a{
     cursor: pointer;
     transition: transform 0.3s ease;
   }
+
+  .whatsapp-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.whatsapp-btn:hover{
+    transform: scale(1.1);
+}
   
   .cetepnews-container img:hover {
     transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
